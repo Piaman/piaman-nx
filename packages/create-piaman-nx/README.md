@@ -11,5 +11,5 @@ You don't need to install this package globally. Simply run it using your favori
 ### Using `npm`
 
 ```bash
-npm create @piaman/piaman-nx@latest my-awesome-app
+npm create piaman-nx@latest my-awesome-app
 ```

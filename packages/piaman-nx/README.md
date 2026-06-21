@@ -4,7 +4,7 @@
 
 Piaman-NX is built from the ground up to provide a modular, developer-friendly experience for building scalable Node.js applications. It embraces modern JavaScript features like native ECMAScript Modules (ESM) and the built-in Node.js test runner, eliminating unnecessary dependencies to keep your production footprint incredibly small.
 
-[![npm version](https://img.shields.io/npm/v/@piaman/piaman-nx.svg)](https://www.npmjs.com/package/@piaman/piaman-nx)
+[![npm version](https://img.shields.io/npm/v/piaman-nx.svg)](https://www.npmjs.com/package/piaman-nx)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -13,9 +13,9 @@ Piaman-NX is built from the ground up to provide a modular, developer-friendly e
 
 Piaman-NX is managed as a monorepo consisting of three core packages:
 
-- **[`@piaman/piaman-nx`](./packages/piaman-nx)**: The core HTTP server, routing engine, and logger.
-- **[`@piaman/piaman-cli`](./packages/piaman-cli)**: The command-line interface to scaffolding and serve your application.
-- **[`@piaman/create-piaman-nx`](./packages/create-piaman-nx)**: The official initializer tool for scaffolding new projects in seconds.
+- **[`piaman-nx`](./packages/piaman-nx)**: The core HTTP server, routing engine, and logger.
+- **[`piaman-cli`](./packages/piaman-cli)**: The command-line interface to scaffolding and serve your application.
+- **[`create-piaman-nx`](./packages/create-piaman-nx)**: The official initializer tool for scaffolding new projects in seconds.
 
 ---
 
@@ -25,7 +25,7 @@ The fastest way to get started with Piaman-NX is by generating a new project usi
 
 ```bash
 # Initialize a new Piaman-NX project
-npm create @piaman/piaman-nx@latest my-awesome-app
+npm create piaman-nx@latest my-awesome-app
 
 # Navigate into your project directory
 cd my-awesome-app

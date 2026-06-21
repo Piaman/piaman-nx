@@ -1,6 +1,6 @@
 {
-  "name": "@piaman/piaman-nx",
-  "version": "1.0.1",
+  "name": "piaman-nx",
+  "version": "1.0.0",
   "description": "Piaman Next Generation — A modern, simple, and blazing-fast JavaScript backend framework",
   "keywords": [
     "piaman",
@@ -32,9 +32,6 @@
     "README.md",
     "LICENSE"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Piaman/piaman-nx.git",

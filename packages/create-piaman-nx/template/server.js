@@ -1,5 +1,5 @@
-import { Http, Response } from '@piaman/piaman-nx/http';
-import { logger } from '@piaman/piaman-nx/logger';
+import { Http, Response } from 'piaman-nx/http';
+import { logger } from 'piaman-nx/logger';
 import config from './piaman.config.js';
 import exampleRoutes from './routes/example/example.routes.js';
 

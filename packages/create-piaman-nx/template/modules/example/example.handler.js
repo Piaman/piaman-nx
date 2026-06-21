@@ -1,4 +1,4 @@
-import { logger } from '@piaman/piaman-nx/logger';
+import { logger } from 'piaman-nx/logger';
 
 export const healthHandler = {
   health(req, res) {

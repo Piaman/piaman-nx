@@ -35,7 +35,7 @@ function create(projectName, targetDir) {
       dev: 'node --watch server.js',
     },
     dependencies: {
-      '@piaman/piaman-nx': `^${pkg.version}`
+      'piaman-nx': `^${pkg.version}`
     },
   };
 

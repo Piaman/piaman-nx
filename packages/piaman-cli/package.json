@@ -1,6 +1,6 @@
 {
-  "name": "@piaman/piaman-cli",
-  "version": "1.0.1",
+  "name": "piaman-cli",
+  "version": "1.0.0",
   "description": "Piaman-NX CLI — Command line interface to scaffold, serve, and generate project files for Piaman-NX framework",
   "keywords": [
     "piaman",
@@ -29,9 +29,6 @@
     "README.md",
     "LICENSE"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Piaman/piaman-nx.git",

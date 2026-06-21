@@ -1,4 +1,4 @@
-import { Router } from '@piaman/piaman-nx/http';
+import { Router } from 'piaman-nx/http';
 import healthHandler from '../../modules/example/example.handler.js';
 
 const router = new Router();

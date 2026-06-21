@@ -1,7 +1,7 @@
 import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
-const HANDLER_TEMPLATE = `import { logger } from '@piaman/piaman-nx/logger';
+const HANDLER_TEMPLATE = `import { logger } from 'piaman-nx/logger';
 
 export const {{name}}Handler = {
   // Define your handler methods here
@@ -13,7 +13,7 @@ export const {{name}}Handler = {
 export default {{name}}Handler;
 `;
 
-const ROUTE_TEMPLATE = `import { Router } from '@piaman/piaman-nx/http';
+const ROUTE_TEMPLATE = `import { Router } from 'piaman-nx/http';
 import {{name}}Handler from '../../modules/{{name}}/{{name}}.handler.js';
 
 const router = new Router();
