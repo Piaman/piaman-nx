@@ -50,7 +50,9 @@ class Http {
 
   async _handleRequest(incomingMessage, serverResponse) {
     const req = new Request(incomingMessage);
-    await req.parseBody();
+    if (req.method !== 'GET' && req.method !== 'HEAD') {
+      await req.parseBody();
+    }
 
     const match = this._router.match(req.method, req.path);
 

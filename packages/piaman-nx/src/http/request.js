@@ -39,10 +39,11 @@ class Request {
   }
 
   _readRawBody() {
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       let data = '';
       this._raw.on('data', (chunk) => { data += chunk; });
       this._raw.on('end', () => { resolve(data); });
+      this._raw.on('error', reject);
     });
   }
 

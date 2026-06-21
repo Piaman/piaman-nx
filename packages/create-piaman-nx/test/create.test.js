@@ -29,21 +29,22 @@ describe('create-piaman-nx scaffold', () => {
     assert.ok(existsSync(join(TEST_DIR, 'piaman.config.js')));
     assert.ok(existsSync(join(TEST_DIR, 'js.config.json')));
     assert.ok(existsSync(join(TEST_DIR, 'package.json')));
+    assert.ok(existsSync(join(TEST_DIR, '.gitignore')));
   });
 
   it('writes correct package.json with project name', () => {
     const pkg = JSON.parse(readFileSync(join(TEST_DIR, 'package.json'), 'utf-8'));
     assert.equal(pkg.name, 'test-app');
     assert.equal(pkg.type, 'module');
-    assert.ok(pkg.dependencies['piaman-nx']);
+    assert.ok(pkg.dependencies['@piaman/piaman-nx']);
     assert.ok(pkg.scripts.start);
     assert.ok(pkg.scripts.dev);
   });
 
   it('server.js contains framework imports', () => {
     const content = readFileSync(join(TEST_DIR, 'server.js'), 'utf-8');
-    assert.ok(content.includes('piaman-nx/http'));
-    assert.ok(content.includes('piaman-nx/logger'));
+    assert.ok(content.includes('@piaman/piaman-nx/http'));
+    assert.ok(content.includes('@piaman/piaman-nx/logger'));
     assert.ok(content.includes('piaman.config.js'));
   });
 

@@ -1,4 +1,4 @@
-import { readFileSync } from 'node:fs';
+import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 const EXTENSION_CONTENT_TYPES = {
@@ -52,11 +52,11 @@ class Response {
       return callable;
     };
 
-    callable.views = (filePath) => {
+    callable.views = async (filePath) => {
       if (ctx._sent) return callable;
       const fullPath = resolve(ctx._viewsDir, filePath);
       try {
-        const content = readFileSync(fullPath);
+        const content = await readFile(fullPath);
         const contentType = inferContentType(filePath);
         const headers = { ...ctx._headers, 'Content-Type': contentType };
         ctx._res.writeHead(ctx._statusCode, headers);

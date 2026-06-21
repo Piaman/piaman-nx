@@ -1,6 +1,6 @@
 {
   "name": "@piaman/create-piaman-nx",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Official initializer to scaffold a fresh Piaman-NX project infrastructure in seconds",
   "keywords": [
     "piaman",
@@ -39,8 +39,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "dependencies": {
-    "@piaman/piaman-nx": "^1.0.6"
   }
 }

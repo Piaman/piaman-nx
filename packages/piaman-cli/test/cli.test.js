@@ -42,7 +42,7 @@ describe('CLI make commands', () => {
     assert.ok(existsSync(filePath));
     const content = readFileSync(filePath, 'utf-8');
     assert.ok(content.includes('userHandler'));
-    assert.ok(content.includes('piaman-nx/logger'));
+    assert.ok(content.includes('@piaman/piaman-nx/logger'));
   });
 
   it('makeRoute creates route file', () => {
@@ -51,7 +51,7 @@ describe('CLI make commands', () => {
     assert.ok(existsSync(filePath));
     const content = readFileSync(filePath, 'utf-8');
     assert.ok(content.includes('Router'));
-    assert.ok(content.includes('piaman-nx/http'));
+    assert.ok(content.includes('@piaman/piaman-nx/http'));
     assert.ok(content.includes('userHandler'));
   });
 

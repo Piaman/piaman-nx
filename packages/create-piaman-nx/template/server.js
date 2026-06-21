@@ -1,13 +1,10 @@
 import { Http, Response } from '@piaman/piaman-nx/http';
 import { logger } from '@piaman/piaman-nx/logger';
 import config from './piaman.config.js';
-import healthHandler from './modules/example/example.handler.js';
 import exampleRoutes from './routes/example/example.routes.js';
 
-const app = new Http({ viewsDir: config.viewsDir });
+const app = new Http({ port: config.port, host: config.host, viewsDir: config.viewsDir });
 
-app.get('/health', healthHandler.health);
-app.get('/health/log', healthHandler.logs);
 app.use(exampleRoutes);
 
 app.get('/', (req, res) => {
