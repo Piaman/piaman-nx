@@ -1,6 +1,6 @@
 {
   "name": "@piaman/piaman-cli",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Piaman-NX CLI — Command line interface to scaffold, serve, and generate project files for Piaman-NX framework",
   "keywords": [
     "piaman",
@@ -18,7 +18,7 @@
     "email": "support@piaman.org"
   },
   "license": "MIT",
-  "author": "Topan <email-anda@example.com>",
+  "author": "Topan <topansidiq28@gmail.com>",
   "type": "module",
   "main": "./src/cli.js",
   "bin": {
@@ -41,6 +41,6 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@piaman/piaman-nx": "^1.0.3"
+    "@piaman/piaman-nx": "^1.0.5"
   }
 }

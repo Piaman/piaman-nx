@@ -1,6 +1,6 @@
 {
   "name": "@piaman/create-piaman-nx",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Official initializer to scaffold a fresh Piaman-NX project infrastructure in seconds",
   "keywords": [
     "piaman",
@@ -17,7 +17,7 @@
     "email": "support@piaman.org"
   },
   "license": "MIT",
-  "author": "Topan <email-anda@example.com>",
+  "author": "Topan <topansidiq28@gmail.com>",
   "type": "module",
   "main": "./src/create.js",
   "bin": {
@@ -41,6 +41,6 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@piaman/piaman-nx": "^1.0.3"
+    "@piaman/piaman-nx": "^1.0.5"
   }
 }

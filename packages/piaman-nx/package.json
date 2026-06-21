@@ -1,6 +1,6 @@
 {
   "name": "@piaman/piaman-nx",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Piaman Next Generation — A modern, simple, and blazing-fast JavaScript backend framework",
   "keywords": [
     "piaman",
@@ -19,7 +19,7 @@
     "email": "support@piaman.org"
   },
   "license": "MIT",
-  "author": "Topan <email-anda@example.com>",
+  "author": "Topan <topansidiq28@gmail.com>",
   "type": "module",
   "main": "./src/index.js",
   "exports": {
