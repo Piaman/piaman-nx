@@ -1,0 +1,14 @@
+{
+  "name": "create-piaman-nx",
+  "version": "1.0.0",
+  "description": "Scaffold a new Piaman-NX project",
+  "type": "module",
+  "bin": {
+    "create-piaman-nx": "./src/create.js"
+  },
+  "files": [
+    "src",
+    "template"
+  ],
+  "license": "MIT"
+}

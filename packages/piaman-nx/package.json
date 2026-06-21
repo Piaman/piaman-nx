@@ -1,0 +1,27 @@
+{
+  "name": "piaman-nx",
+  "version": "1.0.0",
+  "description": "Piaman Next Generation — Modern and simple JavaScript backend framework",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./http": "./src/http/index.js",
+    "./logger": "./src/logger.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "piaman",
+    "framework",
+    "http",
+    "server",
+    "router",
+    "backend"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

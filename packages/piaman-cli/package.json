@@ -1,0 +1,13 @@
+{
+  "name": "piaman-cli",
+  "version": "1.0.0",
+  "description": "Piaman-NX CLI — scaffold, serve, and generate project files",
+  "type": "module",
+  "bin": {
+    "piaman": "./src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "license": "MIT"
+}

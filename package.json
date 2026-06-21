@@ -1,0 +1,18 @@
+{
+  "name": "piaman-nx-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Piaman Next Generation — Modern and simple JavaScript backend framework",
+  "workspaces": [
+    "packages/piaman-nx",
+    "packages/piaman-cli",
+    "packages/create-piaman-nx"
+  ],
+  "scripts": {
+    "test": "node --test \"packages/*/test/**/*.test.js\"",
+    "test:core": "node --test \"packages/piaman-nx/test/**/*.test.js\"",
+    "test:cli": "node --test \"packages/piaman-cli/test/**/*.test.js\"",
+    "test:create": "node --test \"packages/create-piaman-nx/test/**/*.test.js\""
+  },
+  "license": "MIT"
+}

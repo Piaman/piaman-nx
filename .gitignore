@@ -1,0 +1,7 @@
+node_modules/
+test-logs/
+test-cli-gen/
+test-scaffold-output/
+e2e-test-project/
+*.log
+.DS_Store
