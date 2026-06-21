@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { cpSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 

@@ -1,6 +1,6 @@
 {
   "name": "@piaman/piaman-cli",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Piaman-NX CLI — Command line interface to scaffold, serve, and generate project files for Piaman-NX framework",
   "keywords": [
     "piaman",
@@ -41,6 +41,6 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@piaman/piaman-nx": "^1.0.0"
+    "@piaman/piaman-nx": "^1.0.3"
   }
 }

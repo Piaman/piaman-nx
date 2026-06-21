@@ -25,7 +25,7 @@ The fastest way to get started with Piaman-NX is by generating a new project usi
 
 ```bash
 # Initialize a new Piaman-NX project
-npm create piaman-nx@latest my-awesome-app
+npm create @piaman-nx@latest my-awesome-app
 
 # Navigate into your project directory
 cd my-awesome-app
