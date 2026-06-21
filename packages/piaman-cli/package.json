@@ -1,6 +1,6 @@
 {
   "name": "piaman-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Piaman-NX CLI — Command line interface to scaffold, serve, and generate project files for Piaman-NX framework",
   "keywords": [
     "piaman",
