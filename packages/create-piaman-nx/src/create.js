@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { cpSync, mkdirSync, writeFileSync, existsSync, readFileSync } from 'node:fs';
+import { cpSync, mkdirSync, writeFileSync, existsSync, readFileSync, renameSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
 const TEMPLATE_DIR = resolve(import.meta.dirname, '..', 'template');
-const CORE_PKG_PATH = resolve(import.meta.dirname, '..', '..', 'piaman-nx', 'package.json');
+const PKG_PATH = resolve(import.meta.dirname, '..', 'package.json');
 
 function create(projectName, targetDir) {
   const dest = targetDir || join(process.cwd(), projectName);
@@ -19,8 +19,11 @@ function create(projectName, targetDir) {
   // Copy template structure
   cpSync(TEMPLATE_DIR, dest, { recursive: true });
 
-  // Read core package version for dynamic dependency resolution
-  const corePkg = JSON.parse(readFileSync(CORE_PKG_PATH, 'utf-8'));
+  // Rename gitignore → .gitignore (npm excludes dot-gitignore from packages)
+  renameSync(join(dest, 'gitignore'), join(dest, '.gitignore'));
+
+  // Read own package version for dependency resolution (same version as core)
+  const pkg = JSON.parse(readFileSync(PKG_PATH, 'utf-8'));
 
   // Write project-specific package.json
   const packageJson = {
@@ -32,7 +35,7 @@ function create(projectName, targetDir) {
       dev: 'node --watch server.js',
     },
     dependencies: {
-      '@piaman/piaman-nx': `^${corePkg.version}`
+      '@piaman/piaman-nx': `^${pkg.version}`
     },
   };
 

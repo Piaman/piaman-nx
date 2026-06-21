@@ -3,7 +3,11 @@
     "allow": [
       "Bash(git init)",
       "Bash(git rm *)",
-      "Bash(git remote *)"
+      "Bash(git remote *)",
+      "Bash(npm view *)",
+      "Bash(npm install)",
+      "Bash(npm pack *)",
+      "Bash(ren *)"
     ]
   },
   "$version": 4
