@@ -1,6 +1,6 @@
 {
   "name": "@piaman/create-piaman-nx",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Official initializer to scaffold a fresh Piaman-NX project infrastructure in seconds",
   "keywords": [
     "piaman",
