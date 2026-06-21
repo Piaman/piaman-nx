@@ -1,7 +1,25 @@
 {
-  "name": "piaman-nx",
+  "name": "@piaman/piaman-nx",
   "version": "1.0.0",
-  "description": "Piaman Next Generation — Modern and simple JavaScript backend framework",
+  "description": "Piaman Next Generation — A modern, simple, and blazing-fast JavaScript backend framework",
+  "keywords": [
+    "piaman",
+    "piaman-nx",
+    "framework",
+    "http",
+    "server",
+    "router",
+    "backend",
+    "javascript",
+    "node"
+  ],
+  "homepage": "https://github.com/Piaman/piaman-nx#readme",
+  "bugs": {
+    "url": "https://github.com/Piaman/piaman-nx/issues",
+    "email": "support@piaman.org"
+  },
+  "license": "MIT",
+  "author": "Topan <email-anda@example.com>",
   "type": "module",
   "main": "./src/index.js",
   "exports": {
@@ -10,17 +28,18 @@
     "./logger": "./src/logger.js"
   },
   "files": [
-    "src"
+    "src",
+    "README.md",
+    "LICENSE"
   ],
-  "keywords": [
-    "piaman",
-    "framework",
-    "http",
-    "server",
-    "router",
-    "backend"
-  ],
-  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piaman/piaman-nx.git",
+    "directory": "packages/piaman-nx"
+  },
   "engines": {
     "node": ">=18.0.0"
   }

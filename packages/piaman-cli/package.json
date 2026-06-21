@@ -1,13 +1,46 @@
 {
-  "name": "piaman-cli",
+  "name": "@piaman/piaman-cli",
   "version": "1.0.0",
-  "description": "Piaman-NX CLI — scaffold, serve, and generate project files",
+  "description": "Piaman-NX CLI — Command line interface to scaffold, serve, and generate project files for Piaman-NX framework",
+  "keywords": [
+    "piaman",
+    "piaman-nx",
+    "cli",
+    "backend",
+    "framework",
+    "javascript",
+    "node",
+    "scaffold"
+  ],
+  "homepage": "https://github.com/Piaman/piaman-nx#readme",
+  "bugs": {
+    "url": "https://github.com/Piaman/piaman-nx/issues",
+    "email": "support@piaman.org"
+  },
+  "license": "MIT",
+  "author": "Topan <email-anda@example.com>",
   "type": "module",
+  "main": "./src/cli.js",
   "bin": {
     "piaman": "./src/cli.js"
   },
   "files": [
-    "src"
+    "src",
+    "README.md",
+    "LICENSE"
   ],
-  "license": "MIT"
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piaman/piaman-nx.git",
+    "directory": "packages/piaman-cli"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@piaman/piaman-nx": "^1.0.0"
+  }
 }

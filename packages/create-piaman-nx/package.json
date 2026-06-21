@@ -1,14 +1,46 @@
 {
-  "name": "create-piaman-nx",
+  "name": "@piaman/create-piaman-nx",
   "version": "1.0.0",
-  "description": "Scaffold a new Piaman-NX project",
+  "description": "Official initializer to scaffold a fresh Piaman-NX project infrastructure in seconds",
+  "keywords": [
+    "piaman",
+    "piaman-nx",
+    "create-piaman-nx",
+    "scaffold",
+    "initializer",
+    "backend",
+    "framework"
+  ],
+  "homepage": "https://github.com/Piaman/piaman-nx#readme",
+  "bugs": {
+    "url": "https://github.com/Piaman/piaman-nx/issues",
+    "email": "support@piaman.org"
+  },
+  "license": "MIT",
+  "author": "Topan <email-anda@example.com>",
   "type": "module",
+  "main": "./src/create.js",
   "bin": {
     "create-piaman-nx": "./src/create.js"
   },
   "files": [
     "src",
-    "template"
+    "template",
+    "README.md",
+    "LICENSE"
   ],
-  "license": "MIT"
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piaman/piaman-nx.git",
+    "directory": "packages/create-piaman-nx"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@piaman/piaman-nx": "^1.0.0"
+  }
 }
